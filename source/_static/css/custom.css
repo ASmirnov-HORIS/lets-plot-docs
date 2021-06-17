@@ -14,3 +14,16 @@ code {
 a.reference {
   color: #3498DB !important;
 }
+
+.previews-row {
+  display: flex;
+  overflow-x: auto;
+}
+
+.previews-row a {
+  display: contents;
+}
+
+.previews-row img {
+  padding: 5px;
+}
