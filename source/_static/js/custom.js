@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   addLinkToPyPI();
   addLinkToGitHub();
   handlePreviewWindow();
+  fixPanels();
   addTargetToExternalReferences();
   handlePreviewGallery();
 });
@@ -31,17 +32,24 @@ function addLinkToGitHub() {
 }
 
 function handlePreviewWindow() {
+  if (document.getElementsByClassName('preview-picker').length == 0) return;
   const previewPickerLinkElems = document.getElementsByClassName('preview-picker')[0].getElementsByClassName('reference');
   const previewWindowLinkElem = document.getElementsByClassName('preview-window')[0].getElementsByClassName('reference')[0];
   const previewWindowImageElem = previewWindowLinkElem.getElementsByTagName('img')[0];
   const previewLinkOnClick = function (event) {
     event.preventDefault();
-    previewWindowImageElem.setAttribute('src', event.target.getAttribute('src').replace('200x200', '1024x768'));
+    previewWindowImageElem.setAttribute('src', event.target.getAttribute('src').replace('.png', '_full.png'));
     previewWindowLinkElem.setAttribute('href', event.currentTarget.getAttribute('href'));
   }
 
   for (let i = 0; i < previewPickerLinkElems.length; i++)
     previewPickerLinkElems[i].onclick = previewLinkOnClick;
+}
+
+function fixPanels() {
+  const cards = document.getElementsByClassName('card docutils');
+  for (let i = 0; i < cards.length; i++)
+    cards[i].classList.remove('shadow');
 }
 
 function addTargetToExternalReferences() {
@@ -51,20 +59,29 @@ function addTargetToExternalReferences() {
 }
 
 function handlePreviewGallery() {
+  if (document.getElementsByClassName('preview-gallery').length == 0) return;
   const previewsPerRow = 4;
   const previews = document.getElementsByClassName('preview-gallery')[0].getElementsByClassName('d-flex');
   const updatePreviewGallery = function (currentHiddenRowId) {
     for (let i = 0; i < previews.length; i++)
-      if (i < currentHiddenRowId * previewsPerRow)
+      if (i < currentHiddenRowId * previewsPerRow) {
         previews[i].classList.remove('hidden');
-      else
+        previews[i].style.height = String(previews[i].offsetWidth) + 'px';
+      } else
         previews[i].classList.add('hidden');
+  }
+  const thereIsMorePreviews = function () {
+    return !![...previews].find(elem => elem.classList.contains('hidden'));
   }
   let hiddenRowId = 1;
   const loadMoreOnClick = function (event) {
-    event.preventDefault();
-    hiddenRowId++;
-    updatePreviewGallery(hiddenRowId);
+    if (thereIsMorePreviews()) {
+      event.preventDefault();
+      hiddenRowId++;
+      updatePreviewGallery(hiddenRowId);
+      if (thereIsMorePreviews()) return;
+      event.target.innerHTML = "Go to Gallery";
+    }
   }
   updatePreviewGallery(hiddenRowId);
   document.getElementById('preview-gallery-more').getElementsByTagName('a')[0].onclick = loadMoreOnClick;

@@ -13,63 +13,78 @@ Declarative Data Visualization with Lets-Plot
     :container: + preview-window
     :column: col-lg-12 p-2
 
-    |visualization-of-airport-data-on-map|
-
-.. |visualization-of-airport-data-on-map| image:: _static/images/previews/visualization-of-airport-data-on-map_1024x768.png
-    :target: https://www.kaggle.com/alshan/visualization-of-airport-data-on-map
-.. |geom_smooth| image:: _static/images/previews/geom_smooth_1024x768.png
-    :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/geom_smooth.ipynb
-.. |geopandas_kotlin_isl| image:: _static/images/previews/geopandas_kotlin_isl_1024x768.png
-    :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/geopandas_kotlin_isl.ipynb
-.. |formatting_axes_etc| image:: _static/images/previews/formatting_axes_etc_1024x768.png
-    :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/formatting_axes_etc.ipynb
+    |airport-full-kaggle|
 
 .. panels::
-    :container: + preview-picker
+    :container: + previews preview-picker
     :column: col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2
 
-    .. image:: _static/images/previews/visualization-of-airport-data-on-map_200x200.png
-        :target: https://www.kaggle.com/alshan/visualization-of-airport-data-on-map
+    |airport-kaggle|
 
     ---
-    .. image:: _static/images/previews/geom_smooth_200x200.png
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/geom_smooth.ipynb
+    |geom_smooth-nbviewer|
 
     ---
-    .. image:: _static/images/previews/geopandas_kotlin_isl_200x200.png
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/geopandas_kotlin_isl.ipynb
+    |kotlin_isl-nbviewer|
 
     ---
-    .. image:: _static/images/previews/formatting_axes_etc_200x200.png
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/formatting_axes_etc.ipynb
+    |formatting_axes-nbviewer|
 
-.. raw:: html
+About Lets-Plot |official JetBrains project|
+--------------------------------------------
 
-    <div id="try-lets-plot">
-      <div>
-        <a href="https://pypi.org/project/lets-plot" target="_blank">
-          <button>Install with pip</button>
-        </a>
-      </div>
-      <div>
-        <a href="#" class="reference internal">Installation Guide</a>
-      </div>
-    </div>
+.. |official JetBrains project| image:: http://jb.gg/badges/official-flat-square.svg
+    :target: https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub
 
 .. panels::
-    :column: col-lg-8 col-md-4 col-sm-6 col-xs-12 p-2
+    :column: col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2
 
-    About Lets-Plot
-    ^^^^^^^^^^^^^^^
+    |info_table_html|
+
+    ---
+    :column: col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2
+    :body: text-justify
+
+    Lets-Plot is an open-source plotting library for statistical data. It is implemented using the Kotlin programming language.
+
+    ---
+    :column: col-lg-8 col-md-4 col-sm-6 col-xs-12 p-2
 
     The Lets-Plot for Python library includes a native backend and a Python API, which was mostly based on the `ggplot2 <https://ggplot2.tidyverse.org>`__ package well-known to data scientists who use R.
 
-    So you have an excellent possibility to learn the grammar of graphics with Lets-Plot.
+    To learn more about grammar of graphics read an excellent book "ggplot2: Elegant Graphics for Data Analysis". It will be good prerequisite for further exploration of the Lets-Plot library.
 
     ---
     :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
-    .. image:: _static/images/the-grammar-of-graphics-cover.jpg
-        :target: https://www.springer.com/gp/book/9781475731002
+    .. image:: _static/images/ggplot2-elegant-graphics-for-data-analysis.jpg
+        :target: https://ggplot2-book.org/index.html
+
+.. |info_table_html| raw:: html
+
+   <table class="table table-striped table-bordered">
+       <tr>
+           <td>Latest release</td>
+           <td>
+               <a href="https://pypi.org/project/lets-plot/" target="_blank" />
+               <img src="https://badge.fury.io/py/lets-plot.svg" />
+           </td>
+       </tr>
+       <tr>
+           <td>License</td>
+           <td>
+               <a href="https://opensource.org/licenses/MIT" target="_blank" />
+               <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+           </td>
+       </tr>
+       <tr>
+           <td>OS</td>
+           <td>Linux, MacOS, Windows</td>
+       </tr>
+       <tr>
+           <td>Python versions</td>
+           <td>3.6, 3.7, 3.8, 3.9</td>
+       </tr>
+   </table>
 
 Try it now with Datalore
 ------------------------
@@ -83,24 +98,8 @@ Begin with the `quickstart in Datalore <https://view.datalore.io/notebook/Zzg9EV
 .. raw:: html
 
     <div class="video-container">
-      <div id="youtube-quickstart-with-datalore"></div>
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/MjvFQxqNSe0"></iframe>
     </div>
-
-    <script>
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/player_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      var player;
-      function onYouTubePlayerAPIReady() {
-        player = new YT.Player('youtube-quickstart-with-datalore', {
-          height: '360',
-          width: '640',
-          videoId: 'MjvFQxqNSe0'
-        });
-      }
-    </script>
 
 Quickstart
 ----------
@@ -138,7 +137,7 @@ To evaluate the plotting capabilities of Lets-Plot, add the following code to a 
         :target: https://view.datalore.io/notebook/Zzg9EVS6i16ELQo3arzWsP
 
     ---
-    .. image:: _static/images/icon-pycharm.svg
+    .. image:: _static/images/logo/icon-pycharm.svg
 
     ---
     .. image:: https://raw.githubusercontent.com/JetBrains/lets-plot/master/docs/examples/images/logo_kaggle.svg
@@ -156,58 +155,48 @@ More Examples
 -------------
 
 .. panels::
-    :container: + preview-gallery
+    :container: + previews preview-gallery
     :column: col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2
 
-    .. image:: _static/images/previews/visualization-of-airport-data-on-map_200x200.png
-        :target: https://www.kaggle.com/alshan/visualization-of-airport-data-on-map
+    |beijing-kaggle|
 
     ---
-    .. image:: _static/images/previews/geom_smooth_200x200.png
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/geom_smooth.ipynb
+    |correlation_plot-nbviewer|
 
     ---
-    .. image:: _static/images/previews/geopandas_kotlin_isl_200x200.png
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/geopandas_kotlin_isl.ipynb
+    |geocoding_examples-nbviewer|
 
     ---
-    .. image:: _static/images/previews/formatting_axes_etc_200x200.png
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/formatting_axes_etc.ipynb
+    |ggbunch-nbviewer|
 
     ---
-    .. image:: _static/images/previews/geom_smooth_200x200.png
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/geom_smooth.ipynb
+    |geopandas_naturalearth-nbviewer|
 
     ---
-    .. image:: _static/images/previews/geopandas_kotlin_isl_200x200.png
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/geopandas_kotlin_isl.ipynb
+    |image_matrix-nbviewer|
 
     ---
-    .. image:: _static/images/previews/formatting_axes_etc_200x200.png
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/formatting_axes_etc.ipynb
+    |airbnb_boston-datalore|
 
     ---
-    .. image:: _static/images/previews/visualization-of-airport-data-on-map_200x200.png
-        :target: https://www.kaggle.com/alshan/visualization-of-airport-data-on-map
+    |tooltip-nbviewer|
 
     ---
-    .. image:: _static/images/previews/geopandas_kotlin_isl_200x200.png
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/geopandas_kotlin_isl.ipynb
+    |sampling_groups-nbviewer|
 
     ---
-    .. image:: _static/images/previews/formatting_axes_etc_200x200.png
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/formatting_axes_etc.ipynb
+    |sampling_pick-nbviewer|
 
     ---
-    .. image:: _static/images/previews/visualization-of-airport-data-on-map_200x200.png
-        :target: https://www.kaggle.com/alshan/visualization-of-airport-data-on-map
+    |sampling_stratified-nbviewer|
 
     ---
-    .. image:: _static/images/previews/geom_smooth_200x200.png
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/geom_smooth.ipynb
+    |sampling_vertex-nbviewer|
 
 .. raw:: html
 
     <div id="preview-gallery-more">
-      <a href="#" class="reference internal">Show More</a>
+      <a href="gallery/index.html" class="reference internal">Show More</a>
     </div>
+
+.. include:: _shared/previews.rst

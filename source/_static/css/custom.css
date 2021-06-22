@@ -19,6 +19,13 @@ a.reference {
   display: none !important;
 }
 
+.previews .d-flex .card {
+  max-width: 200px;
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #try-lets-plot, #preview-gallery-more {
   text-align: center;
   padding: 20px;
@@ -44,4 +51,10 @@ a.reference {
 
 .platforms-for-lets-plot .card img {
   width: 100%;
+}
+
+.preview-gallery .d-flex {
+  transition: height 0.5s ease-out;
+  height: 0;
+  overflow: hidden;
 }
