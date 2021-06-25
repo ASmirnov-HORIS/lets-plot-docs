@@ -1,3 +1,5 @@
+.. include:: _shared/previews_basics.rst
+
 .. Default Previews (200x200 px)
 
 .. |beijing-kaggle| image:: /_static/images/previews/beijing-housing-prices-on-a-map-with-spatial-join.png

@@ -5,7 +5,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. include:: _shared/previews.rst
+.. include:: /_shared/previews_all.rst
 
 
 Lets-Plot: Declarative Data Visualization Library
@@ -200,5 +200,5 @@ More Examples
 .. raw:: html
 
     <div id="preview-gallery-more">
-      <a href="#" class="reference internal">Show More</a>
+      <a href="pages/gallery.html" class="reference internal">Show More</a>
     </div>
