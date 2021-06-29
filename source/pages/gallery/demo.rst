@@ -1,6 +1,6 @@
 .. _gallery_demo:
 
-.. include:: /_shared/previews_demo.rst
+.. include:: /shared/previews/demo.rst
 
 Demo Examples
 #############

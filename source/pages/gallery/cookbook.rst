@@ -1,6 +1,6 @@
 .. _gallery_cookbook:
 
-.. include:: /_shared/previews_cookbook.rst
+.. include:: /shared/previews/cookbook.rst
 
 Cookbook
 ########

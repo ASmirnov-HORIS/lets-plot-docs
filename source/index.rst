@@ -5,7 +5,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. include:: /_shared/previews_all.rst
+.. include:: /shared/previews.rst
 
 
 Lets-Plot: Declarative Data Visualization Library
