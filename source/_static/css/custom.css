@@ -49,10 +49,6 @@ a.reference {
   height: 100%;
 }
 
-.platforms-for-lets-plot .card img {
-  width: 100%;
-}
-
 .lets-plot-platforms {
   display: flex;
   justify-content: center;
