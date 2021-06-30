@@ -32,6 +32,14 @@ Lets-Plot: Declarative Data Visualization Library
     ---
     |formatting_axes_etc-nbviewer|
 
+.. panels::
+    :column: col-lg-12 p-2
+    :card: + text-center font-size-2
+
+    .. link-button:: installation_guide
+        :type: ref
+        :text: Installation Guide
+
 About Lets-Plot |official JetBrains project|
 --------------------------------------------
 
@@ -129,31 +137,40 @@ To evaluate the plotting capabilities of **Lets-Plot**, add the following code t
         geom_density(color='dark_green', alpha=.7) + scale_fill_brewer(type='seq') + \
         theme(axis_line_y='blank')
 
-.. panels::
-    :container: + platforms-for-lets-plot
-    :column: col-lg-2 col-md-4 col-sm-6 col-xs-12 p-2
+.. raw:: html
 
-    .. image:: https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg
-        :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/quickstart.ipynb
-
-    ---
-    .. image:: https://raw.githubusercontent.com/JetBrains/lets-plot/master/docs/examples/images/logo_datalore.svg
-        :target: https://view.datalore.io/notebook/Zzg9EVS6i16ELQo3arzWsP
-
-    ---
-    .. image:: _static/images/logo/icon-pycharm.svg
-
-    ---
-    .. image:: https://raw.githubusercontent.com/JetBrains/lets-plot/master/docs/examples/images/logo_kaggle.svg
-        :target: https://www.kaggle.com/alshan/lets-plot-quickstart
-
-    ---
-    .. image:: https://raw.githubusercontent.com/JetBrains/lets-plot/master/docs/examples/images/logo_colab.svg
-        :target: https://colab.research.google.com/drive/1uYYZcG0g0kP4lJdPkpWB8aBS96ioDii2?usp=sharing
-
-    ---
-    .. image:: https://raw.githubusercontent.com/JetBrains/lets-plot/master/docs/examples/images/logo_deepnote.svg
-        :target: https://deepnote.com/project/673ea421-638e-469d-8d04-5cc4c6e0258f#%2Fnotebook.ipynb
+    <div class="lets-plot-platforms">
+      <div>
+        <a class="reference external" href="https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/quickstart.ipynb">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" />
+        </a>
+      </div>
+      <div>
+        <a class="reference external" href="https://view.datalore.io/notebook/Zzg9EVS6i16ELQo3arzWsP">
+          <img src="https://raw.githubusercontent.com/JetBrains/lets-plot/master/docs/examples/images/logo_datalore.svg" />
+        </a>
+      </div>
+      <div>
+        <a class="reference external" href="https://plugins.jetbrains.com/plugin/14379-lets-plot-in-sciview">
+          <img src="_static/images/logo/icon-pycharm.svg" />
+        </a>
+      </div>
+      <div>
+        <a class="reference external" href="https://www.kaggle.com/alshan/lets-plot-quickstart">
+          <img src="https://raw.githubusercontent.com/JetBrains/lets-plot/master/docs/examples/images/logo_kaggle.svg" />
+        </a>
+      </div>
+      <div>
+        <a class="reference external" href="https://colab.research.google.com/drive/1uYYZcG0g0kP4lJdPkpWB8aBS96ioDii2?usp=sharing">
+          <img src="https://raw.githubusercontent.com/JetBrains/lets-plot/master/docs/examples/images/logo_colab.svg" />
+        </a>
+      </div>
+      <div>
+        <a class="reference external" href="https://deepnote.com/project/673ea421-638e-469d-8d04-5cc4c6e0258f#%2Fnotebook.ipynb">
+          <img src="https://raw.githubusercontent.com/JetBrains/lets-plot/master/docs/examples/images/logo_deepnote.svg" />
+        </a>
+      </div>
+    </div>
 
 More Examples
 -------------

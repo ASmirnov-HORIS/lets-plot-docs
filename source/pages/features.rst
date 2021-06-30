@@ -204,6 +204,21 @@ Sampling is also one of the ways of handling over-plotting.
 Learn more: :ref:`Sampling in Lets-Plot <sampling>`.
 
 
+Export to File
+--------------
+
+.. panels::
+    :column: col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2
+
+    |export_svg_html-nbviewer|
+
+The ``ggsave()`` function is an easy way to export plot to a file in SVG or HTML formats.
+
+.. note::
+
+    The ``ggsave()`` function currently do not save images of interactive maps to SVG.
+
+
 'No Javascript' Mode
 --------------------
 

@@ -53,8 +53,24 @@ a.reference {
   width: 100%;
 }
 
+.lets-plot-platforms {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.lets-plot-platforms img {
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .preview-gallery .d-flex {
   transition: height 0.5s ease-out;
   height: 0;
   overflow: hidden;
+}
+
+.font-size-2 * {
+  font-size: 2rem !important;
 }
