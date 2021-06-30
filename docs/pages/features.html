@@ -87,6 +87,7 @@
 <li><a class="reference internal" href="#formatting">Formatting</a></li>
 <li><a class="reference internal" href="#tooltip-customization">Tooltip Customization</a></li>
 <li><a class="reference internal" href="#data-sampling">Data Sampling</a></li>
+<li><a class="reference internal" href="#export-to-file">Export to File</a></li>
 <li><a class="reference internal" href="#no-javascript-mode">‘No Javascript’ Mode</a></li>
 <li><a class="reference internal" href="#offline-mode">Offline Mode</a></li>
 </ul>
@@ -434,6 +435,25 @@
 <p>Sampling helps dealing with large datasets when unintentional attempt to plot an excessively large number of geometries can lead to UI freezes and even to out-of-memory crashes.</p>
 <p>Sampling is also one of the ways of handling over-plotting.</p>
 <p>Learn more: <a class="reference internal" href="features/sampling.html#sampling"><span class="std std-ref">Sampling in Lets-Plot</span></a>.</p>
+</div>
+<div class="section" id="export-to-file">
+<h2>Export to File<a class="headerlink" href="#export-to-file" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text"><a class="reference external" href="https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/export_SVG_HTML.ipynb"><img alt="export_svg_html-nbviewer" src="../_images/export_svg_html.png" /></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">ggsave()</span></code> function is an easy way to export plot to a file in SVG or HTML formats.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">ggsave()</span></code> function currently do not save images of interactive maps to SVG.</p>
+</div>
 </div>
 <div class="section" id="no-javascript-mode">
 <h2>‘No Javascript’ Mode<a class="headerlink" href="#no-javascript-mode" title="Permalink to this headline">¶</a></h2>

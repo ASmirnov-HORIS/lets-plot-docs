@@ -1,6 +1,6 @@
 .. _gallery_basics:
 
-.. include:: /_shared/previews_basics.rst
+.. include:: /shared/previews/basics.rst
 
 Basics
 ######
