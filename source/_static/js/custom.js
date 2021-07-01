@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   addLinkToPyPI();
   addLinkToGitHub();
-  handlePreviewWindow();
+  //handlePreviewWindow();
+  handlePreviewsSliders();
   fixPanels();
   addTargetToExternalReferences();
   handlePreviewGallery();
@@ -31,6 +32,7 @@ function addLinkToGitHub() {
   document.querySelector("#navbar .navbar-header").appendChild(linkElem);
 }
 
+/*
 function handlePreviewWindow() {
   if (document.getElementsByClassName('preview-picker').length == 0) return;
   const previewPickerLinkElems = document.getElementsByClassName('preview-picker')[0].getElementsByClassName('reference');
@@ -44,6 +46,40 @@ function handlePreviewWindow() {
 
   for (let i = 0; i < previewPickerLinkElems.length; i++)
     previewPickerLinkElems[i].onclick = previewLinkOnClick;
+}
+*/
+
+function handlePreviewsSliders() {
+  if (document.getElementsByClassName('previews-slider-window').length == 0) return;
+  const psWindows = document.getElementsByClassName('previews-slider-window');
+  for (let i = 0; i < psWindows.length; i++) {
+    const psWindow = psWindows[i];
+    const psId = Array.from(psWindow.classList).find((className) => className.indexOf("id-") == 0);
+    const psContent = document.getElementsByClassName(`previews-slider-content ${psId}`)[0];
+    handlePreviewsSlider(psWindow, psContent);
+  }
+}
+
+function handlePreviewsSlider(psWindow, psContent) {
+  if (psWindow.getElementsByClassName('reference').length < 3) return;
+  const btnLeft = psWindow.getElementsByClassName('reference')[0];
+  const nbLinkElem = psWindow.getElementsByClassName('reference')[1];
+  const nbImgElem = nbLinkElem.getElementsByTagName('img')[0];
+  const btnRight = psWindow.getElementsByClassName('reference')[2];
+  const previews = psContent.getElementsByClassName('d-flex');
+  const previewsCount = previews.length;
+  let currentPreviewId = 0;
+  const onClick = function (event, direction) {
+    event.preventDefault();
+    if (previewsCount < 2) return;
+    currentPreviewId = (previewsCount + currentPreviewId + direction) % previewsCount;
+    const previewLinkElem = previews[currentPreviewId].getElementsByClassName('reference')[0];
+    const previewImgElem = previewLinkElem.getElementsByTagName('img')[0];
+    nbImgElem.setAttribute('src', previewImgElem.getAttribute('src').replace('.png', '_4x3.png'));
+    nbLinkElem.setAttribute('href', previewLinkElem.getAttribute('href'));
+  }
+  btnLeft.onclick = (event) => onClick(event, -1);
+  btnRight.onclick = (event) => onClick(event, 1);
 }
 
 function fixPanels() {

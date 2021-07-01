@@ -19,11 +19,9 @@ a.reference {
   display: none !important;
 }
 
-.previews .d-flex .card {
-  max-width: 200px;
-  max-height: 200px;
-  margin-left: auto;
-  margin-right: auto;
+.previews-slider-window .card-body {
+  display: flex;
+  align-items: center;
 }
 
 #try-lets-plot, #preview-gallery-more {

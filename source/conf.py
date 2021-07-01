@@ -82,7 +82,6 @@ html_theme_options = {
     'navbar_links': [
       ('API', 'pages/api'),
       ('Gallery', 'pages/gallery'),
-      ('Features', 'pages/features'),
     ],
     'bootswatch_theme': 'flatly', # List of themes for v3: https://bootswatch.com/3
     'navbar_sidebarrel': False,

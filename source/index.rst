@@ -8,17 +8,29 @@
 .. include:: /shared/previews.rst
 
 
-Lets-Plot: Declarative Data Visualization Library
-=================================================
+Explore Your Data with Lets-Plot
+================================
 
 .. panels::
-    :container: + preview-window
-    :column: col-lg-12 p-2
+    :container: + previews-slider-window id-1
+    :column: col-lg-1 p-2
+
+    .. image:: _static/images/slider_left.png
+        :target: #
+
+    ---
+    :column: col-lg-10 p-2
 
     |map_airports_4x3-kaggle|
 
+    ---
+    :column: col-lg-1 p-2
+
+    .. image:: _static/images/slider_right.png
+        :target: #
+
 .. panels::
-    :container: + previews preview-picker
+    :container: + previews-slider-content id-1 hidden
     :column: col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2
 
     |map_airports-kaggle|
@@ -33,88 +45,82 @@ Lets-Plot: Declarative Data Visualization Library
     |formatting_axes_etc-nbviewer|
 
 .. panels::
-    :column: col-lg-12 p-2
-    :card: + text-center font-size-2
+    :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
 
-    .. link-button:: installation_guide
-        :type: ref
-        :text: Installation Guide
+    Grammar of Graphics
+    ^^^^^^^^^^^^^^^^^^^
 
-About Lets-Plot |official JetBrains project|
---------------------------------------------
+    .. raw:: html
 
-.. |official JetBrains project| image:: http://jb.gg/badges/official-flat-square.svg
-    :target: https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub
+        <a class="reference internal image-reference" href="#">
+          <img src="_images/graph_building.png">
+        </a>
+        <br/>
+        <br/>
+
+    The **Lets-Plot** for Python library includes a native backend and a :ref:`Python API <api>`, which was mostly based on the `ggplot2 <https://ggplot2.tidyverse.org>`__ package well-known to data scientists who use R.
+
+    ---
+    Interactive Maps
+    ^^^^^^^^^^^^^^^^
+
+    .. raw:: html
+
+        <a class="reference internal image-reference" href="#">
+          <img src="_images/beijing.png">
+        </a>
+        <br/>
+        <br/>
+
+    **Lets-Plot** supports interactive maps via the ``geom_livemap()`` geom layer which enables a researcher to visualize geospatial information on a zoomable and paneble map.
+
+    ---
+    Hot Features
+    ^^^^^^^^^^^^
+
+    .. raw:: html
+
+        <a class="reference internal image-reference" href="pages/features.html">
+          <img src="_images/scatter_matrix.png">
+        </a>
+        <br/>
+        <br/>
+
+    With **Lets-Plot** you got an access to the bunch of high-level features that help you to build beautiful plots with ggplot-like API.
+
+Installation Guide
+------------------
 
 .. panels::
     :column: col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2
 
-    |info_table_html|
+    For Linux and Mac users
+    ^^^^^^^^^^^^^^^^^^^^^^^
+
+    To install the **Lets-Plot** library, run the following command:
+
+    .. code:: shell
+
+        pip install lets-plot
 
     ---
-    :column: col-lg-6 col-md-4 col-sm-6 col-xs-12 p-2
-    :body: text-justify
+    For Windows users
+    ^^^^^^^^^^^^^^^^^
 
-    **Lets-Plot** is an open-source plotting library for statistical data. It is implemented using the Kotlin programming language.
+    Install Anaconda3 (or Miniconda3), then install MinGW toolchain to Conda:
 
-    **Lets-Plot** supports geospatial data and has some convenient :ref:`features <features>` to help you explore it.
+    .. code:: shell
 
-    ---
-    :column: col-lg-8 col-md-4 col-sm-6 col-xs-12 p-2
+        conda install m2w64-toolchain
 
-    The **Lets-Plot** for Python library includes a native backend and a :ref:`Python API <api>`, which was mostly based on the `ggplot2 <https://ggplot2.tidyverse.org>`__ package well-known to data scientists who use R.
+    Install the **Lets-Plot** library:
 
-    To learn more about the grammar of graphics, we recommend an excellent book called "ggplot2: Elegant Graphics for Data Analysis". It will be a good prerequisite for further exploration of the **Lets-Plot** library.
+    .. code:: shell
 
-    ---
-    :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
-    .. image:: _static/images/ggplot2-elegant-graphics-for-data-analysis.jpg
-        :target: https://ggplot2-book.org/index.html
+        pip install lets-plot
 
-.. |info_table_html| raw:: html
-
-   <table class="table table-striped table-bordered">
-       <tr>
-           <td>Latest release</td>
-           <td>
-               <a href="https://pypi.org/project/lets-plot/" target="_blank" />
-               <img src="https://badge.fury.io/py/lets-plot.svg" />
-           </td>
-       </tr>
-       <tr>
-           <td>License</td>
-           <td>
-               <a href="https://opensource.org/licenses/MIT" target="_blank" />
-               <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-           </td>
-       </tr>
-       <tr>
-           <td>OS</td>
-           <td>Linux, MacOS, Windows</td>
-       </tr>
-       <tr>
-           <td>Python versions</td>
-           <td>3.6, 3.7, 3.8, 3.9</td>
-       </tr>
-   </table>
-
-Try it now with Datalore
-------------------------
-
-You can try the **Lets-Plot** library in `Datalore <https://datalore.jetbrains.com>`__. **Lets-Plot** is available in Datalore out-of-the-box.
-
-The advantage of `Datalore <https://datalore.jetbrains.com>`__ as a learning tool in comparison to Jupyter is that it is equipped with a very friendly Python editor which comes with auto-completion, intentions and other useful coding assistance features.
-
-Begin with the `quickstart in Datalore <https://view.datalore.io/notebook/Zzg9EVS6i16ELQo3arzWsP>`__ notebook to learn more about Datalore notebooks.
-
-.. raw:: html
-
-    <div class="video-container">
-      <iframe width="640" height="360" src="https://www.youtube.com/embed/MjvFQxqNSe0"></iframe>
-    </div>
-
-Quickstart
-----------
+Quickstart with Jupyter
+-----------------------
 
 You can use **Lets-Plot** in a Jupyter notebook or another notebook of your choice, like Datalore, Kaggle or Colab.
 
@@ -172,11 +178,26 @@ To evaluate the plotting capabilities of **Lets-Plot**, add the following code t
       </div>
     </div>
 
+Quickstart with Datalore
+------------------------
+
+You can try the **Lets-Plot** library in `Datalore <https://datalore.jetbrains.com>`__. **Lets-Plot** is available in Datalore out-of-the-box.
+
+The advantage of `Datalore <https://datalore.jetbrains.com>`__ as a learning tool in comparison to Jupyter is that it is equipped with a very friendly Python editor which comes with auto-completion, intentions and other useful coding assistance features.
+
+Begin with the `quickstart in Datalore <https://view.datalore.io/notebook/Zzg9EVS6i16ELQo3arzWsP>`__ notebook to learn more about Datalore notebooks.
+
+.. raw:: html
+
+    <div class="video-container">
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/MjvFQxqNSe0"></iframe>
+    </div>
+
 More Examples
 -------------
 
 .. panels::
-    :container: + previews preview-gallery
+    :container: + preview-gallery
     :column: col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2
 
     |beijing-kaggle|
