@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lets_plot.geom_crossbar &#8212; lets-plot 2.0.4 documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/thebelab-helper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script src="../../_static/js/custom.js"></script>
+    <script src="../../_static/js/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          Lets-Plot</a>
+        <span class="navbar-text navbar-version pull-left"><b>2.0.4</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../api.html">API</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">lets_plot.geom_crossbar</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lets-plot-geom-crossbar">
+<h1>lets_plot.geom_crossbar<a class="headerlink" href="#lets-plot-geom-crossbar" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="lets_plot.geom_crossbar">
+<code class="sig-prename descclassname"><span class="pre">lets_plot.</span></code><code class="sig-name descname"><span class="pre">geom_crossbar</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mapping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tooltips</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fatten</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">other_args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lets_plot.geom_crossbar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display bars with horizontal median line.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mapping</strong> (<cite>FeatureSpec</cite>) – Set of aesthetic mappings created by <cite>aes()</cite> function.
+Aesthetic mappings describe the way that variables in the data are
+mapped to plot “aesthetics”.</p></li>
+<li><p><strong>data</strong> (dict or <cite>DataFrame</cite>) – The data to be displayed in this layer. If None, the default, the data
+is inherited from the plot data as specified in the call to ggplot.</p></li>
+<li><p><strong>stat</strong> (<em>str, default=’identity’</em>) – The statistical transformation to use on the data for this layer, as a string.
+Supported transformations: ‘identity’ (leaves the data unchanged),
+‘count’ (counts number of points with same x-axis coordinate),
+‘bin’ (counts number of points with x-axis coordinate in the same bin),
+‘smooth’ (performs smoothing - linear default),
+‘density’ (computes and draws kernel density estimate).</p></li>
+<li><p><strong>position</strong> (str or <cite>FeatureSpec</cite>) – Position adjustment, either as a string (‘identity’, ‘stack’, ‘dodge’, …),
+or the result of a call to a position adjustment function.</p></li>
+<li><p><strong>show_legend</strong> (<em>bool, default=True</em>) – False - do not show legend for this layer.</p></li>
+<li><p><strong>sampling</strong> (<cite>FeatureSpec</cite>) – Result of the call to the <cite>sampling_xxx()</cite> function.
+Value None (or ‘none’) will disable sampling for this layer.</p></li>
+<li><p><strong>tooltips</strong> (<cite>layer_tooltips</cite>) – Result of the call to the <cite>layer_tooltips()</cite> function.
+Specifies appearance, style and content.</p></li>
+<li><p><strong>fatten</strong> (<em>float, default=2.5</em>) – A multiplicative factor applied to size of the middle bar.</p></li>
+<li><p><strong>other_args</strong> – Other arguments passed on to the layer.
+These are often aesthetics settings used to set an aesthetic to a fixed value,
+like color=’red’, fill=’blue’, size=3 or shape=21.
+They may also be parameters to the paired geom/stat.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Geom object specification.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>LayerSpec</cite></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><cite>geom_crossbar()</cite> represents a vertical interval, defined by <cite>x</cite>, <cite>ymin</cite>, <cite>ymax</cite>.
+The mean is represented by horizontal line.</p>
+<p><cite>geom_crossbar()</cite> understands the following aesthetics mappings:</p>
+<ul class="simple">
+<li><p>x : x-axis coordinates.</p></li>
+<li><p>ymin : lower bound for error bar.</p></li>
+<li><p>middle : position of median bar.</p></li>
+<li><p>ymax : upper bound for error bar.</p></li>
+<li><p>alpha : transparency level of a layer. Understands numbers between 0 and 1.</p></li>
+<li><p>color (colour) : color of a geometry lines. Can be continuous or discrete. For continuous value this will be a color gradient between two colors.</p></li>
+<li><p>fill : color of geometry filling.</p></li>
+<li><p>size : lines width.</p></li>
+<li><p>width : width of a bar.</p></li>
+<li><p>linetype : type of the line. Codes and names: 0 = ‘blank’, 1 = ‘solid’, 2 = ‘dashed’, 3 = ‘dotted’, 4 = ‘dotdash’, 5 = ‘longdash’, 6 = ‘twodash’.</p></li>
+</ul>
+</div>
+<p class="rubric">Examples</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lets_plot</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">LetsPlot</span><span class="o">.</span><span class="n">setup_html</span><span class="p">()</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;ymin&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+    <span class="s1">&#39;middle&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">6.5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+    <span class="s1">&#39;ymax&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+<span class="p">}</span>
+<span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">))</span> <span class="o">+</span> \
+<span class="hll">    <span class="n">geom_crossbar</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">ymin</span><span class="o">=</span><span class="s1">&#39;ymin&#39;</span><span class="p">,</span> <span class="n">middle</span><span class="o">=</span><span class="s1">&#39;middle&#39;</span><span class="p">,</span> <span class="n">ymax</span><span class="o">=</span><span class="s1">&#39;ymax&#39;</span><span class="p">))</span>
+</span></pre></div>
+</td></tr></table></div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="egN2WH"></div>
+<script type="text/javascript" data-lets-plot-script="library">
+    if(!window.letsPlotCallQueue) {
+        window.letsPlotCallQueue = [];
+    }; 
+    window.letsPlotCall = function(f) {
+        window.letsPlotCallQueue.push(f);
+    };
+    (function() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v2.0.4/js-package/distr/lets-plot.min.js";
+        script.onload = function() {
+            window.letsPlotCall = function(f) {f();};
+            window.letsPlotCallQueue.forEach(function(f) {f();});
+            window.letsPlotCallQueue = [];
+
+        };
+        script.onerror = function(event) {
+            window.letsPlotCall = function(f) {};    // noop
+            window.letsPlotCallQueue = [];
+            var div = document.createElement("div");
+            div.style.color = 'darkred';
+            div.textContent = 'Error loading Lets-Plot JS';
+            document.getElementById("egN2WH").appendChild(div);
+        };
+        var e = document.getElementById("egN2WH");
+        e.appendChild(script);
+    })()
+</script>
+</div><div class="output text_html">   <div id="DcrkB4"></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+       (function() {
+           var plotSpec={
+"data":{
+"x":["a","b","c","d"],
+"ymin":[5.0,7.0,3.0,5.0],
+"middle":[6.5,9.0,4.5,7.0],
+"ymax":[8.0,11.0,6.0,9.0]
+},
+"mapping":{
+"x":"x"
+},
+"data_meta":{
+},
+"kind":"plot",
+"scales":[],
+"layers":[{
+"geom":"crossbar",
+"mapping":{
+"ymin":"ymin",
+"middle":"middle",
+"ymax":"ymax"
+},
+"data_meta":{
+},
+"data":{
+}
+}]
+};
+           var plotContainer = document.getElementById("DcrkB4");
+           window.letsPlotCall(function() {{
+               LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
+           }});
+       })();    
+   </script></div></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">lets_plot</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">LetsPlot</span><span class="o">.</span><span class="n">setup_html</span><span class="p">()</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="n">cat_list</span> <span class="o">=</span> <span class="p">{</span><span class="n">c</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s1">&#39;abcdefgh&#39;</span><span class="p">}</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">cat_list</span><span class="o">.</span><span class="n">keys</span><span class="p">()),</span> <span class="n">n</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">cat_list</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">x</span><span class="p">])</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">y</span><span class="p">})</span>
+<span class="n">err_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;min&#39;</span><span class="p">,</span> <span class="s1">&#39;median&#39;</span><span class="p">,</span> <span class="s1">&#39;max&#39;</span><span class="p">]})</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">err_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;ymin&#39;</span><span class="p">,</span> <span class="s1">&#39;ymedian&#39;</span><span class="p">,</span> <span class="s1">&#39;ymax&#39;</span><span class="p">]</span>
+<span class="n">ggplot</span><span class="p">()</span> <span class="o">+</span> \
+<span class="hll">    <span class="n">geom_crossbar</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">ymin</span><span class="o">=</span><span class="s1">&#39;ymin&#39;</span><span class="p">,</span> <span class="n">middle</span><span class="o">=</span><span class="s1">&#39;ymedian&#39;</span><span class="p">,</span> <span class="n">ymax</span><span class="o">=</span><span class="s1">&#39;ymax&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">),</span> \
+</span><span class="hll">                  <span class="n">data</span><span class="o">=</span><span class="n">err_df</span><span class="p">,</span> <span class="n">width</span><span class="o">=.</span><span class="mi">6</span><span class="p">,</span> <span class="n">fatten</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> <span class="o">+</span> \
+</span>    <span class="n">geom_jitter</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">width</span><span class="o">=.</span><span class="mi">3</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="bXqA0i"></div>
+<script type="text/javascript" data-lets-plot-script="library">
+    if(!window.letsPlotCallQueue) {
+        window.letsPlotCallQueue = [];
+    }; 
+    window.letsPlotCall = function(f) {
+        window.letsPlotCallQueue.push(f);
+    };
+    (function() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v2.0.4/js-package/distr/lets-plot.min.js";
+        script.onload = function() {
+            window.letsPlotCall = function(f) {f();};
+            window.letsPlotCallQueue.forEach(function(f) {f();});
+            window.letsPlotCallQueue = [];
+
+        };
+        script.onerror = function(event) {
+            window.letsPlotCall = function(f) {};    // noop
+            window.letsPlotCallQueue = [];
+            var div = document.createElement("div");
+            div.style.color = 'darkred';
+            div.textContent = 'Error loading Lets-Plot JS';
+            document.getElementById("bXqA0i").appendChild(div);
+        };
+        var e = document.getElementById("bXqA0i");
+        e.appendChild(script);
+    })()
+</script>
+</div><div class="output text_html">   <div id="BxAAjh"></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+       (function() {
+           var plotSpec={
+"mapping":{
+},
+"data_meta":{
+},
+"kind":"plot",
+"scales":[],
+"layers":[{
+"geom":"crossbar",
+"data":{
+"x":["a","b","c","d","e","f","g","h"],
+"ymin":[0.7925921418649895,-0.41156525254230636,-0.7098937280888604,-0.022035892598677886,0.041993911329053946,-0.20638335170287014,-0.2672727706247402,-0.6547350899892193],
+"ymedian":[2.850604599769973,1.9636738793816824,1.52417578050295,2.6212588837577915,1.9580514612712312,2.3234341119087416,2.566623361529121,2.1859725893078514],
+"ymax":[5.11868420280174,4.969236720648516,4.062272031781082,4.838105473648354,3.604084535365277,4.326009073306406,5.14135438827413,4.873902353041861]
+},
+"mapping":{
+"x":"x",
+"ymin":"ymin",
+"middle":"ymedian",
+"ymax":"ymax",
+"fill":"x"
+},
+"data_meta":{
+},
+"fatten":5,
+"width":0.6
+},{
+"geom":"jitter",
+"data":{
+"x":["g","d","e","g","c","h","e","e","g","b","c","g","c","c","h","e","d","h","h","c","f","e","b","h","d","f","f","b","h","d","e","a","d","b","f","e","d","a","a","c","c","g","b","h","d","d","h","g","f","f","g","f","c","d","g","d","h","a","c","e","c","g","e","a","g","b","d","a","d","f","b","b","a","b","e","b","d","d","g","d","g","d","e","h","g","c","f","a","d","b","h","d","b","f","f","f","b","d","f","e","g","b","b","d","b","b","f","d","f","g","h","g","h","f","g","d","a","f","h","e","h","e","b","g","e","h","b","a","d","d","d","e","a","e","g","e","a","a","g","a","h","a","d","h","h","g","c","c","a","h","c","c","a","c","e","b","g","b","a","d","g","a","h","d","b","a","h","g","g","f","h","e","c","d","h","f","c","c","a","c","e","g","f","c","a","e","b","g","g","f","g","c","a","g","g","b","b","d","e","c","g","h","g","a","d","e","h","d","f","e","g","g","e","g","c","e","d","e","h","g","c","c","f","d","b","b","e","f","a","e","f","d","d","d","d","d","f","f","c","h","b","g","d","a","g","f","a","a","a","c","f","a","d","e","a","c","g","f","h","c","a","f","e","a","c","b","d","h","g","c","f","h","h","h","a","d","a","f","a","b","d","d","f","g","b","c","a","e","a","h","a","c","a","b","b","d","f","g","e","h","a","a","c","f","b","e","d","b","h","f","h","g","d","g","c","h","c","a","g","f","h","e","d","b","f","f","c","g","h","h","a","a","d","c","f","h","e","c","d","d","c","d","c","b","c","g","c","d","h","g","d","a","a","h","h","g","b","h","a","c","d","a","a","b","g","g","f","b","c","g","d","h","b","h","a","d","d","a","b","a","h","f","d","e","e","h","c","g","a","a","c","c","h","h","c","d","h","f","h","a","h","d","c","a","h","d","f","h","d","f","c","h","f","a","c","a","e","b","h","f","b","b","f","c","h","e","a","d","a","d","a","f","e","h","d","h","h","h","g","c","a","h","a","h","d","c","c","f","g","f","f","f","f","f","e","c","f","h","c","c","b","e","f","a","d","g","h","a","e","d","e","h","c","d","c","h","a","h","a","d","d","f","e","f","e","f","c","d","a","e","h","e","a","f","e","g","c","d","a","d","g","e","e","h","g","a","h","c","h","b","a","b","g","f","b","c","h","f","h","b","h","g","f","g","b","g","c","b","b","b","a","h","a","a","c","f","h","g","e","b","g","b","c","b","a","h","e","d","b","g","a","d","e","d","a","h","h","f","h","f","d","c","g","g","d","b","b","h","g","g","f","c","a","b","g","f","e","f","b","b","f","a","d","b","f","g","f","c","d","e","a","h","e","d","d","d","e","g","d","f","e","h","d","f","g","c","g","h","d","h","e","b","d","b","f","c","a","h","g","c","d","b","g","b","e","b","e","f","g","g","a","d","e","a","b","b","a","g","b","h","f","f","h","a","h","e","e","a","h","e","g","h","g","e","f","e","g","c","d","b","h","c","e","f","a","e","f","d","e","g","a","f","f","f","d","e","d","h","b","b","h","e","g","d","a","f","f","e","g","b","b","f","e","d","b","d","g","b","b","c","b","h","a","h","e","e","d","h","h","h","g","b","a","d","h","h","c","d","h","d","b","c","d","a","a","e","c","c","e","d","c","a","a","h","b","c","d","e","e","d","g","f","b","e","c","b","c","g","a","b","h","e","b","b","b","f","b","c","a","g","d","b","e","b","e","c","e","h","d","a","e","e","a","d","b","e","a","h","h","c","a","c","h","d","b","a","g","h","h","g","f","h","e","d","a","g","e","g","a","c"],
+"y":[3.8867486571596643,2.6958545919756527,2.437081411714895,2.2710030934118794,1.8130785810196637,2.1113772338367855,1.8521244054126496,2.350285465856845,1.7630491667718626,3.9827431878787385,0.4828948470315195,1.367081237217603,2.647023102031289,2.280574922494157,2.865640105256625,2.3834739496842112,2.662603977495979,1.3442659167186384,2.317324846398196,0.8117505170191098,3.2403808818421704,1.6080710589177927,1.064858715400767,1.9201344465514767,3.087782204618518,1.7015365956204445,1.4430407528579878,2.1340431236851907,2.486486859313193,2.167907574971764,1.2840901348016087,2.8954340002484815,1.2267664088455696,0.48289213781672324,1.5468169271719832,1.5416812887080842,2.9857583159408985,4.138740279840397,3.5210436860928644,1.3289736985677945,1.4698960206285328,1.5787404853675264,1.8718427762008885,1.9528616492843316,2.997569310680983,1.8476198067905707,2.7608668024456424,4.114008763007913,2.1565009999675615,2.6669728705233604,3.2714138417164476,1.8640406765385829,1.7130047103416384,2.687443151124689,2.678945948554167,1.9018409664874274,2.2660304624634127,3.161382354136295,2.9400558363262634,2.714399266505138,3.642094686042778,1.8139222871172858,2.62744907714061,2.846726068629197,4.7710727832230075,1.082057626838127,1.8351289081621176,2.063991417446823,0.5509550260330869,1.7395061267436582,1.1312232506395805,2.040749698669486,3.0051400386680047,3.766526751409165,2.705552278605982,1.3134522565308755,1.7764360789945357,3.1667699218493994,1.261036642984693,4.5063095161972475,3.760709970726622,2.205675098238189,0.041993911329053946,3.595392662369883,2.4667300047527174,2.7267285405046833,0.6708334896300521,2.0640090399370723,2.680094450061077,1.9373365059580205,1.7914548167252264,3.2977006826903925,0.8227354828106841,2.122881663403126,2.385556780136318,2.779699982483168,2.6019707902821683,1.5502086585050245,0.7311469776887969,3.0328052623184405,2.913583861984927,1.1418693756367249,3.4415078877158014,2.7905253846357523,3.069653096257105,1.9578743936033873,4.326009073306406,4.430191592786098,2.0162969999453457,3.552840800959691,2.8868962377896175,3.949901407537684,1.2765968276243655,2.9513126084228585,3.639694336854923,0.9161112639197795,1.48012555022507,0.2260289706643186,1.9721134537599123,2.4726706962158937,3.7438773403004983,1.8292232208397066,3.5189714577645703,1.2011683917904439,0.05174600106477678,2.1859725893078514,2.274421361132586,2.630689314796752,0.6074086503030172,2.5857307108301053,1.3703812498380405,2.42480098924997,3.0299823089876936,0.8152486540925762,2.067402932668642,0.6959149185309799,2.6007049656176733,3.6185263833920835,1.5955438036697915,3.1674305784086894,1.7112626698320292,1.870511230628501,2.567820390388336,1.206277965785096,1.687870982857288,1.3833919574164868,3.453637361447611,1.52417578050295,1.9636585548982595,2.455500198938692,1.3765841788403916,1.2679426289979985,3.27755076293427,2.2464199385785264,1.224627292809404,1.3145376715485986,2.3062181528536914,-0.41156525254230636,1.148193000692293,4.041725017787418,4.2262375635066185,2.4143480233344667,2.8180772512602363,2.9861009048864298,4.969236720648516,3.782958974325422,2.1136026967237034,1.6257294094049095,0.9748235297477628,2.468724784291642,1.4851695429201666,0.33287473082225727,0.842339344288695,1.5933027467284988,3.928661923277035,3.1469009053738697,1.480939587214604,2.9688563674212474,2.7407523705384635,0.6276280272029578,3.2782525176895887,3.120179893689994,1.2280149940979628,1.2985735504476132,1.787765809506088,0.3723287094555954,2.81653345972492,4.490686490475466,1.182702276186194,2.82823038511499,1.9306272808835083,1.0017868447665255,2.0709901386519762,1.7172790803255191,2.629791477950162,1.0594057957822407,2.1608127379731172,2.6246126408937567,1.5161803935535216,0.5813485664896236,2.0044985194370026,2.9969115140302263,3.082187037629716,1.6858288180922942,2.7741830557721197,2.5065155637917202,0.5721150070830983,3.2182109427228287,1.6026373894785726,2.3257271090130907,1.8180106934628184,0.7763877493408162,0.12758600253676877,2.6293547966667172,1.7486347302527034,0.8508118153155229,3.3134432091202677,0.09360837815097156,2.1754404895571535,1.3702536502428786,0.8370761207290623,1.5363108998476356,1.4048477831404669,2.2902952061130684,2.8966487214077192,1.3134640426701298,2.590820552485073,1.135554293766801,3.193188240806128,3.196697061077832,-0.20638335170287014,1.8779554948724169,3.251922877523434,2.471805364299901,3.0459966237142027,2.0708655636270734,2.351850935897319,2.1095839130323397,2.656694290191029,2.495941131505683,2.227958574268481,2.169392883882868,2.1872445262704003,2.230825875071224,2.975721992383632,1.8442766676041562,2.953158919787258,4.738784861536284,3.5345087663225376,1.1628886963633804,3.466475070588364,2.2553086898692936,0.6367262151650399,0.7470421295025274,0.7925921418649895,1.137398744489913,2.599688229194887,3.941698460699702,2.5684476619686327,1.2698116997223572,3.4927896440743345,0.05412583941653404,1.9907429985284975,3.434249256777812,0.01032598275137997,3.034109955400208,3.013347157837308,1.8262323743036688,3.21405171611162,3.7596050863356174,2.4471274034829142,2.489740874504806,1.782159388664226,1.3916759187396783,3.4937198794350905,1.8187669244340265,2.7349503001102375,1.7876037016593025,3.142363888637237,2.2240180174802266,3.712390694600793,2.164834351488147,1.9953862131310478,1.6025061342230278,1.446062652117167,1.8662127215760738,3.420372679536197,0.832963116242306,3.5329899829965052,3.597158147009421,3.076818966114546,3.3657080410892872,1.8895948637872721,0.6457012088818614,0.11163566328899988,4.170895061832077,2.919626804778477,2.52568517909488,2.035097066739752,1.1160312409060935,5.1091360425076715,2.7926052448660728,1.5983070231361145,2.991027772323111,2.371365143929992,1.9790124646990628,1.884376294897582,2.3618242693292744,4.1235447846795035,3.6106811945793966,3.834706914843867,2.07005417357415,1.6852459300843128,2.455482929905687,1.5446371408199162,3.335711806675419,-0.20355240118359785,4.192934382351459,2.423261951426346,1.838380078476999,1.2294159129443025,0.10027176855416209,3.4980213343048083,1.9636738793816824,0.9753002486833653,0.9701823763608031,1.1531275292410932,4.2502913752947284,1.9819289368408652,0.7383773350863638,2.417640998804901,2.3906604931431747,-0.022035892598677886,1.4346173620134093,2.0343266182157413,2.9377266530178883,3.604084535365277,2.615477258078979,2.405962059788063,1.5683248416012234,4.062272031781082,2.734069184357382,1.5028415204441676,1.866230825083275,1.6869969892990764,2.436909438081393,0.9152502216509852,2.1279918091025016,2.2087670179884715,2.0378450788715705,1.9620049676657294,2.769814290582742,2.40840684546999,3.7455132767871584,-0.40944952018854197,3.672776701927797,3.1364411046909075,0.16813005579632057,2.3206964688104965,1.11747136253543,1.2673390556250725,1.8855673752999698,1.5528082174250164,3.642626355616901,3.5169482431527963,3.852824944999494,2.986933212467654,0.7613041409760493,0.9643919622514479,3.0706444112332534,1.4527229414509484,2.954518718376858,1.6500305140351434,1.8666994806548725,3.3743440310943367,3.1191140618289337,2.313884584523814,3.8227138662550932,0.8092925845933812,3.279319669835109,2.834621546172854,1.955714709110429,3.0009837725850117,0.5040148640346285,2.6791554596268323,2.056618151761481,0.966189208012182,3.6302790758422248,1.959040372348086,1.2549227665272855,-0.06771694499268222,2.0949221798768614,0.9610909357081869,3.9963144701888345,-0.5930171793525005,4.371307118632932,2.4525377554070884,2.168548036554027,1.6966012013955203,3.062520177242916,2.203885585779622,3.778152632359415,1.6031398771932612,2.813685824352723,1.8779080759906142,2.6179051266218263,2.5730629173164785,0.5313518955478445,1.3266653282371808,3.008525242447134,1.6597776666591635,2.057536951851791,2.2836950814898125,3.0109657682525164,0.94915254822186,1.8850793374885324,1.950973695517613,0.9119831345782464,2.649773043918942,0.5626775441865788,2.919511549518922,2.3629533946063215,2.521290882738295,2.4716032124767353,3.9069947326670467,2.7694985054380616,0.8225098315591999,1.3952737836071922,2.0385654851951664,2.7009418005537276,3.181043083359968,1.5395173352709537,1.9418952048970097,1.4861373558511475,2.0633329473509456,0.8348591913562478,1.3182870420935657,0.8898356825881364,1.6053965970280024,2.542554025139061,1.713985174058902,4.873902353041861,3.1567019637717344,2.426356411899344,1.81649297016168,2.1892221079402128,0.9132744022934476,2.387270963069781,5.14135438827413,2.1692012486997694,3.414534474710095,1.5620847232985318,2.2302726579274577,4.036061784059929,1.1281613826321641,3.30136078652815,2.9730130838798945,1.6790535123102024,2.1213199675867425,2.4614666781579513,2.512165874410475,0.184903720529475,1.5381239725995506,2.4158654273393405,2.6004173212428476,3.2019419475560134,2.419221289137724,1.328039704180744,2.1353262914258946,3.285436495626717,2.314918888350971,3.322301013759092,2.3228343830801257,3.1340308295713304,1.4187465170725746,0.5805593546884786,3.093002282023431,2.4492079753675813,2.9349629000862185,1.3981021745225843,1.5937942099346314,3.318414001757323,1.7155732865632765,2.9467618457970435,1.7834468165503925,2.2950172879201642,2.427196034507219,2.15880602212552,2.7595048398318287,1.292853151714889,1.8070240607721544,1.4459563169512921,2.885517834524558,1.7865125267609419,3.010884565993452,1.6866625477858315,1.3020405843698626,2.235119692068719,4.110361947244578,2.8714055268544683,3.61311438947397,0.26956806738295946,2.02217870628919,3.1311510838279073,2.6635538392807594,3.7288644379561964,1.7242318381040977,2.8982596687168014,4.540418411823721,1.5275173517536194,2.2178815414900734,3.3437403893109794,4.160841995736048,1.742401121271151,1.4701690950974213,1.2071276196707144,0.897069777170193,1.346609201940221,1.2373795214524022,1.12255834708915,2.2068354008176887,2.815484582541856,3.8157616412384963,1.5829158092665443,2.874678310669862,2.367281005779826,1.4394485188787887,2.5651754043598824,0.7676338906309799,2.2727656583773292,2.8298362711039013,2.733971552212619,2.9525527067986634,5.11868420280174,0.8511722442799056,1.7342641934226015,1.6183797617797056,2.0257927308450805,1.1177413131134137,3.07937244330083,4.00177409799519,1.3196096184438022,0.6565566554269928,2.3617714685796827,2.1111610186098737,2.874452105959981,1.9580514612712312,1.1591066353456618,3.43786111352334,4.377147523100857,2.050595372406459,2.2871491904069097,2.0409938311448363,3.0093075403299188,3.3219283355636757,4.25172482697082,2.0645730607104205,1.4669639038859654,0.8622010601899428,1.5343311084825002,2.6417237774690965,3.283470092049009,2.063658550969164,2.805057801644234,2.658427854270142,3.0787491856413625,4.4172883380669,1.7106515152841495,2.0918304074871132,3.6254307270744075,2.9471526380507305,3.335619554267255,3.247312248216809,1.5310638214062189,3.1719246806976447,3.373964729007327,2.5756106216172956,2.772535179531717,2.9570306017824324,3.0596515026389515,3.6474201394619463,3.312093950480488,2.5077326700260394,2.0370695986266014,3.471770114932776,1.7643341790180993,2.6339344572973205,1.0955734162038608,2.703595573277711,3.03358030302723,2.8544831309107486,2.287956836360619,0.3952722994400122,3.4211043163701147,3.320334931483969,4.838105473648354,1.4473502054669307,2.8004201776692743,2.9242344340536492,3.8427144281878935,1.6598329080329792,2.520541813974809,3.282747260059433,2.4518702715807774,2.134836235454807,1.683002221429529,3.6549015998651075,1.2150049887934098,2.80782042448977,1.541399473265297,2.950175069344774,0.36716900740950376,2.1159289030713055,2.2675677872577995,3.8307851776587594,1.4231619674582336,2.108184536197647,4.12267735764506,1.1332559495890913,-0.7098937280888604,3.1148652003962263,1.3883016878406673,1.560037032874622,2.598712359492632,1.9989291541911303,1.3262772814565502,0.47482404174903703,3.137718476704564,3.2314710279639964,2.4820939862259523,4.510021058938511,1.6047659840167412,0.2296032694951926,1.9714759930096006,1.8447698958377807,2.1336953615159704,2.4221480050345154,2.9333252465196322,0.6388164880028344,3.6852848922777293,2.1831099700318504,3.382556980012547,2.584245634582174,3.120137282044629,2.811287568436674,2.2028370004372464,2.3978512002874752,3.9925365930232766,2.43804145790594,2.4641321980084436,2.4915341557181083,3.681637503653943,1.9048775479460656,3.556068873330747,2.2251031977800757,0.3243533383018833,2.7093742649161245,0.8078605710563407,3.5154942993316176,1.2377319328908876,1.7953368549896904,-0.4006285024143095,1.3028221211708546,-0.1586181782045375,1.0794812394051219,2.5155430965642287,3.0510613070752512,3.1003083121278587,0.7881522972907185,2.5335584938633553,2.6597815238002767,1.1068964592318764,3.76865945019157,3.1426234390000904,2.45388657651323,1.7820142794144622,2.8832335582904465,0.19978541978017939,1.6431785296726815,1.20837166419548,1.2399002783095545,1.4740281475339765,4.378956376854858,3.3156936116099036,2.0922050731080484,2.8378439297805778,3.664616585010421,2.6797621233327003,2.6409002199255096,1.2434191344877046,2.5885792258068685,2.658746533846169,2.6503216604476636,3.310022552024863,2.9399086275126134,2.139615538782326,3.898663915639661,2.0879555168856783,3.965616784818544,0.7997244104416537,3.6263197153585276,2.439431071667118,2.011966059276397,1.7576344541501485,1.4347811322256112,2.179294386821848,3.1976862383783935,1.6678202842658911,2.2171656959434873,4.383790646816333,4.308813020106046,2.3266795818673107,2.7013875410590455,2.794882077061155,2.8550382609348866,1.2187277230060645,1.2315356911078763,1.0062666764653043,2.6407434108097494,3.3220466900456347,1.4071694498939045,3.062898991821254,1.4490850873405525,1.199009182681025,2.887835881450817,2.8022267430320857,3.17283991998909,1.0300279656622815,2.833809273851227,2.6363422808421864,1.316284928590402,3.5470440003775177,3.315706941304265,0.6651281312202206,3.366896261919174,2.869003582678673,2.0492880488333642,2.1509319738573405,2.24915862670267,2.935524516166801,2.030964696159915,1.5936377804863677,1.8648018412018332,2.927857459679296,2.032512383125654,1.5197415801071725,2.2606109391795663,-0.2672727706247402,3.8121497632629486,0.15064213341517885,1.8790793468013378,0.6354585457937876,0.5956744364723727,3.0511826995717977,1.4226547108813872,2.611765030155135,1.8434353333140945,1.965953055754343,2.7402059539511003,1.2982776258167656,3.6711175697900336,1.396599329031966,0.19854654176018038,1.462240751227366,3.255888231054242,2.3391339706447143,1.4064763060120722,1.8922625838860412,2.3532156991255113,4.740132046451686,2.1370638926514847,2.185170087611001,3.6936675169226874,2.913639909369407,1.6313137663725754,1.5587785913349532,2.5917828034767814,2.2042980516946282,2.9691498318414498,1.540858114338521,3.3960241401064244,1.4081956484226392,2.3201554785205607,0.6766500658107861,2.80668358689576,3.009872538788838,3.5792799598649876,-0.6547350899892193,4.3298949929851975,2.4416802218501616,3.3734439651619357,1.2016143610789392,2.3679023454825012,1.6214351871692376,2.03961510219504,4.495301203872121,1.564446039656585,2.798702723185058,3.5334517935795993,1.9845941165038261]
+},
+"mapping":{
+"x":"x",
+"y":"y"
+},
+"data_meta":{
+},
+"width":0.3,
+"shape":1,
+"color":"black",
+"alpha":0.5
+}]
+};
+           var plotContainer = document.getElementById("BxAAjh");
+           window.letsPlotCall(function() {{
+               LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
+           }});
+       })();    
+   </script></div></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a class="reference internal" href="#">Back to top</a>
+    </p>
+    <p>
+      Copyright © 2019-2021 JetBrains s.r.o.<br>
+      Created using <a class="reference external" href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>
