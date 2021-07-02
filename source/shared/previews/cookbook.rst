@@ -124,6 +124,8 @@
 
 .. |scatter_matrix-nbviewer| image:: /examples/cookbook/previews/scatter_matrix.png
     :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/scatter_matrix.ipynb
+.. |scatter_matrix_4x3-nbviewer| image:: /examples/cookbook/previews/scatter_matrix_4x3.png
+    :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/scatter_matrix.ipynb
 
 .. |scatter_plot-nbviewer| image:: /examples/cookbook/previews/scatter_plot.png
     :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/scatter_plot.ipynb

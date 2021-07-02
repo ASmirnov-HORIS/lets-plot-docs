@@ -2,8 +2,26 @@
 
 .. include:: /shared/previews.rst
 
-Features
-########
+Hot Features
+============
+
+.. panels::
+    :container: + page-demo
+    :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
+    :body: text-center
+
+    Try the demo notebook with key features of **Lets-Plot** right now:
+
+    .. image:: https://mybinder.org/badge_logo.svg
+        :target: #
+        :width: 100%
+
+    (it's free and no need to sign-up)
+
+    ---
+    :column: col-lg-8 col-md-4 col-sm-6 col-xs-12 p-2
+
+    |scatter_matrix_4x3-nbviewer|
 
 
 GGBunch

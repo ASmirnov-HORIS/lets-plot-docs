@@ -122,6 +122,7 @@ html_sidebars = {
     # local table of contents
     'index': ['localtoc.html'],
     'pages/api': ['localtoc.html'],
+    'pages/gog': ['localtoc.html'],
     'pages/interactive_maps': ['localtoc.html'],
     'pages/features': ['localtoc.html'],
 }

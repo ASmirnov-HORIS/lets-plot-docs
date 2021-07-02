@@ -156,6 +156,8 @@
 
 .. |graph_building-nbviewer| image:: /examples/basics/previews/graph_building.png
     :target: https://nbviewer.jupyter.org/github/ASmirnov-HORIS/lets-plot-docs/blob/dev/source/examples/basics/graph_building.ipynb
+.. |graph_building_4x3-nbviewer| image:: /examples/basics/previews/graph_building_4x3.png
+    :target: https://nbviewer.jupyter.org/github/ASmirnov-HORIS/lets-plot-docs/blob/dev/source/examples/basics/graph_building.ipynb
 
 .. |grey_scale-nbviewer| image:: /examples/basics/previews/grey_scale.png
     :target: https://nbviewer.jupyter.org/github/ASmirnov-HORIS/lets-plot-docs/blob/dev/source/examples/basics/grey_scale.ipynb

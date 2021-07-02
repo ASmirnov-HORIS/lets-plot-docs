@@ -52,7 +52,7 @@ Explore Your Data with Lets-Plot
 
     .. raw:: html
 
-        <a class="reference internal image-reference" href="#">
+        <a class="reference internal image-reference" href="pages/gog.html">
           <img src="_images/graph_building.png">
         </a>
         <br/>
