@@ -119,6 +119,9 @@ html_sidebars = {
     # Default to no sidebar
     '**': [],
 
-    # local table of contents for the API page
+    # local table of contents
+    'index': ['localtoc.html'],
     'pages/api': ['localtoc.html'],
+    'pages/interactive_maps': ['localtoc.html'],
+    'pages/features': ['localtoc.html'],
 }

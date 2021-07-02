@@ -3,8 +3,12 @@
 
 .. |bar_on_livemap-nbviewer| image:: /examples/cookbook/previews/bar_on_livemap.png
     :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/features/bar_on_livemap.ipynb
+.. |bar_on_livemap_4x3-nbviewer| image:: /examples/cookbook/previews/bar_on_livemap_4x3.png
+    :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/features/bar_on_livemap.ipynb
 
 .. |bigquery_gis-kaggle| image:: /examples/cookbook/previews/bigquery_gis.png
+    :target: https://www.kaggle.com/asmirnovhoris/bigquery-gis-and-lets-plot
+.. |bigquery_gis_4x3-kaggle| image:: /examples/cookbook/previews/bigquery_gis_4x3.png
     :target: https://www.kaggle.com/asmirnovhoris/bigquery-gis-and-lets-plot
 
 .. |contours-nbviewer| image:: /examples/cookbook/previews/contours.png
@@ -34,6 +38,8 @@
     :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/formatting_axes_etc.ipynb
 
 .. |geocoding_examples-nbviewer| image:: /examples/cookbook/previews/geocoding_examples.png
+    :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/geocoding_examples.ipynb
+.. |geocoding_examples_4x3-nbviewer| image:: /examples/cookbook/previews/geocoding_examples_4x3.png
     :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/geocoding_examples.ipynb
 
 .. |geocoding_reference-nbviewer| image:: /examples/cookbook/previews/geocoding_reference.png
@@ -87,8 +93,12 @@
 
 .. |map_california_housing-nbviewer| image:: /examples/cookbook/previews/map_california_housing.png
     :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/map-california-housing/map_california_housing.ipynb
+.. |map_california_housing_4x3-nbviewer| image:: /examples/cookbook/previews/map_california_housing_4x3.png
+    :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/map-california-housing/map_california_housing.ipynb
 
 .. |map_US_household_income-nbviewer| image:: /examples/cookbook/previews/map_US_household_income.png
+    :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/map_US_household_income.ipynb
+.. |map_US_household_income_4x3-nbviewer| image:: /examples/cookbook/previews/map_US_household_income_4x3.png
     :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/map_US_household_income.ipynb
 
 .. |quickstart-nbviewer| image:: /examples/cookbook/previews/quickstart.png
@@ -119,6 +129,8 @@
     :target: https://nbviewer.jupyter.org/github/JetBrains/lets-plot/blob/master/docs/examples/jupyter-notebooks/scatter_plot.ipynb
 
 .. |the_gallery_of_basemaps-kaggle| image:: /examples/cookbook/previews/the_gallery_of_basemaps.png
+    :target: https://www.kaggle.com/alshan/the-gallery-of-basemaps
+.. |the_gallery_of_basemaps_4x3-kaggle| image:: /examples/cookbook/previews/the_gallery_of_basemaps_4x3.png
     :target: https://www.kaggle.com/alshan/the-gallery-of-basemaps
 
 .. |tooltip_config-nbviewer| image:: /examples/cookbook/previews/tooltip_config.png

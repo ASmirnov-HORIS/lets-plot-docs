@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   addLinkToPyPI();
   addLinkToGitHub();
-  //handlePreviewWindow();
   handlePreviewsSliders();
+  handlePreviewsPickers();
   fixPanels();
   addTargetToExternalReferences();
   handlePreviewGallery();
@@ -31,23 +31,6 @@ function addLinkToGitHub() {
   linkElem.appendChild(logoElem);
   document.querySelector("#navbar .navbar-header").appendChild(linkElem);
 }
-
-/*
-function handlePreviewWindow() {
-  if (document.getElementsByClassName('preview-picker').length == 0) return;
-  const previewPickerLinkElems = document.getElementsByClassName('preview-picker')[0].getElementsByClassName('reference');
-  const previewWindowLinkElem = document.getElementsByClassName('preview-window')[0].getElementsByClassName('reference')[0];
-  const previewWindowImageElem = previewWindowLinkElem.getElementsByTagName('img')[0];
-  const previewLinkOnClick = function (event) {
-    event.preventDefault();
-    previewWindowImageElem.setAttribute('src', event.target.getAttribute('src').replace('.png', '_4x3.png'));
-    previewWindowLinkElem.setAttribute('href', event.currentTarget.getAttribute('href'));
-  }
-
-  for (let i = 0; i < previewPickerLinkElems.length; i++)
-    previewPickerLinkElems[i].onclick = previewLinkOnClick;
-}
-*/
 
 function handlePreviewsSliders() {
   if (document.getElementsByClassName('previews-slider-window').length == 0) return;
@@ -80,6 +63,30 @@ function handlePreviewsSlider(psWindow, psContent) {
   }
   btnLeft.onclick = (event) => onClick(event, -1);
   btnRight.onclick = (event) => onClick(event, 1);
+}
+
+function handlePreviewsPickers() {
+  if (document.getElementsByClassName('previews-picker-window').length == 0) return;
+  const ppWindows = document.getElementsByClassName('previews-picker-window');
+  for (let i = 0; i < ppWindows.length; i++) {
+    const ppWindow = ppWindows[i];
+    const ppId = Array.from(ppWindow.classList).find((className) => className.indexOf("id-") == 0);
+    const ppContent = document.getElementsByClassName(`previews-picker-content ${ppId}`)[0];
+    handlePreviewsPicker(ppWindow, ppContent);
+  }
+}
+
+function handlePreviewsPicker(ppWindow, ppContent) {
+  const nbLinkElem = ppWindow.getElementsByClassName('reference')[0];
+  const nbImgElem = nbLinkElem.getElementsByTagName('img')[0];
+  const previewsLinkElems = ppContent.getElementsByClassName('reference');
+  const onClick = function (event) {
+    event.preventDefault();
+    nbImgElem.setAttribute('src', event.target.getAttribute('src').replace('.png', '_4x3.png'));
+    nbLinkElem.setAttribute('href', event.currentTarget.getAttribute('href'));
+  }
+  for (let i = 0; i < previewsLinkElems.length; i++)
+    previewsLinkElems[i].onclick = onClick;
 }
 
 function fixPanels() {

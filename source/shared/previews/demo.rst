@@ -9,6 +9,8 @@
 
 .. |beijing-kaggle| image:: /examples/demo/previews/beijing.png
     :target: https://www.kaggle.com/alshan/beijing-housing-prices-on-a-map-with-spatial-join
+.. |beijing_4x3-kaggle| image:: /examples/demo/previews/beijing_4x3.png
+    :target: https://www.kaggle.com/alshan/beijing-housing-prices-on-a-map-with-spatial-join
 
 .. |covid19_and_mobility-nbviewer| image:: /examples/demo/previews/covid19_and_mobility.png
     :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/demo/covid-19_and_mobility.ipynb
@@ -23,6 +25,8 @@
     :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/demo/google_suggestions.ipynb
 
 .. |internet_use_and_activities-nbviewer| image:: /examples/demo/previews/internet_use_and_activities.png
+    :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/demo/internet_use_and_activities.ipynb
+.. |internet_use_and_activities_4x3-nbviewer| image:: /examples/demo/previews/internet_use_and_activities_4x3.png
     :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/demo/internet_use_and_activities.ipynb
 
 .. |kernels_visualization-nbviewer| image:: /examples/demo/previews/kernels_visualization.png
@@ -47,11 +51,15 @@
 
 .. |minard-nbviewer| image:: /examples/demo/previews/minard.png
     :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/demo/minard.ipynb
+.. |minard_4x3-nbviewer| image:: /examples/demo/previews/minard_4x3.png
+    :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/demo/minard.ipynb
 
 .. |mosaic_image-nbviewer| image:: /examples/demo/previews/mosaic_image.png
     :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/demo/mosaic_image.ipynb
 
 .. |museums-nbviewer| image:: /examples/demo/previews/museums.png
+    :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/demo/museums.ipynb
+.. |museums_4x3-nbviewer| image:: /examples/demo/previews/museums_4x3.png
     :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/demo/museums.ipynb
 
 .. |nobel-nbviewer| image:: /examples/demo/previews/nobel.png
@@ -62,16 +70,24 @@
 
 .. |plotting_airbnb_prices_boston-datalore| image:: /examples/demo/previews/plotting_airbnb_prices_boston.png
     :target: https://datalore.jetbrains.com/view/notebook/eifzdh96VYuNrcjuOpYPYr
+.. |plotting_airbnb_prices_boston_4x3-datalore| image:: /examples/demo/previews/plotting_airbnb_prices_boston_4x3.png
+    :target: https://datalore.jetbrains.com/view/notebook/eifzdh96VYuNrcjuOpYPYr
 .. |plotting_airbnb_prices_boston-medium| image:: /examples/demo/previews/plotting_airbnb_prices_boston.png
     :target: https://csboutique.medium.com/lets-plot-948ee80cfa5c
 
 .. |pushkin-nbviewer| image:: /examples/demo/previews/pushkin.png
     :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/remakes/pushkin.ipynb
+.. |pushkin_4x3-nbviewer| image:: /examples/demo/previews/pushkin_4x3.png
+    :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/remakes/pushkin.ipynb
 
 .. |spb_bakeries-nbviewer| image:: /examples/demo/previews/spb_bakeries.png
     :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/demo/spb_bakeries.ipynb
+.. |spb_bakeries_4x3-nbviewer| image:: /examples/demo/previews/spb_bakeries_4x3.png
+    :target: https://nbviewer.jupyter.org/github/HIL-HK/lets-plot-examples/blob/master/demo/spb_bakeries.ipynb
 
 .. |titanic-kaggle| image:: /examples/demo/previews/titanic.png
+    :target: https://www.kaggle.com/alshan/visualization-of-the-titanic-s-voyage
+.. |titanic_4x3-kaggle| image:: /examples/demo/previews/titanic_4x3.png
     :target: https://www.kaggle.com/alshan/visualization-of-the-titanic-s-voyage
 .. |titanic-colab| image:: /examples/demo/previews/titanic.png
     :target: https://colab.research.google.com/drive/1PerUfSCyStcbnlXnxBj-JVI25-cXB_N5?usp=sharing

@@ -198,6 +198,8 @@
 
 .. |maps_and_geocoding-nbviewer| image:: /examples/basics/previews/maps_and_geocoding.png
     :target: https://nbviewer.jupyter.org/github/ASmirnov-HORIS/lets-plot-docs/blob/dev/source/examples/basics/maps_and_geocoding.ipynb
+.. |maps_and_geocoding_4x3-nbviewer| image:: /examples/basics/previews/maps_and_geocoding_4x3.png
+    :target: https://nbviewer.jupyter.org/github/ASmirnov-HORIS/lets-plot-docs/blob/dev/source/examples/basics/maps_and_geocoding.ipynb
 
 .. |nudge_position-nbviewer| image:: /examples/basics/previews/nudge_position.png
     :target: https://nbviewer.jupyter.org/github/ASmirnov-HORIS/lets-plot-docs/blob/dev/source/examples/basics/nudge_position.ipynb

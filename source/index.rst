@@ -66,8 +66,8 @@ Explore Your Data with Lets-Plot
 
     .. raw:: html
 
-        <a class="reference internal image-reference" href="#">
-          <img src="_images/beijing.png">
+        <a class="reference internal image-reference" href="pages/interactive_maps.html">
+          <img src="_images/museums.png">
         </a>
         <br/>
         <br/>
