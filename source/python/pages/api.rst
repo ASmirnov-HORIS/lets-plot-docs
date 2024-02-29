@@ -59,6 +59,7 @@ Standard Geometries
     geom_point
     geom_path
     geom_line
+    geom_curve
     geom_smooth
     geom_bar
     geom_count

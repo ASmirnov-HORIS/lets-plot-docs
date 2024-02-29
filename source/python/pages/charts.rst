@@ -54,6 +54,7 @@ Points:
 Lines:
 :py:mod:`line <lets_plot.geom_line>`,
 :py:mod:`path <lets_plot.geom_path>`,
+:py:mod:`curve <lets_plot.geom_curve>`,
 :py:mod:`diagonal line <lets_plot.geom_abline>`,
 :py:mod:`horizontal line <lets_plot.geom_hline>`,
 :py:mod:`vertical line <lets_plot.geom_vline>`,
@@ -103,6 +104,8 @@ Examples:
 - .. extref:: aes_size_color_variadic_lines
       :type: text
 - .. extref:: geom_spoke
+      :type: text
+- .. extref:: geom_curve
       :type: text
 
 
