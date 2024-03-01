@@ -59,7 +59,6 @@ Standard Geometries
     geom_point
     geom_path
     geom_line
-    geom_curve
     geom_smooth
     geom_bar
     geom_count
@@ -95,6 +94,7 @@ Standard Geometries
     geom_step
     geom_rect
     geom_segment
+    geom_curve
     geom_spoke
     geom_text
     geom_label

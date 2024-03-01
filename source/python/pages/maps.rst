@@ -80,7 +80,6 @@ Combine Layers on Map ``ggplot2`` Style
 :py:mod:`point <lets_plot.geom_point>`,
 :py:mod:`pie <lets_plot.geom_pie>`,
 :py:mod:`path <lets_plot.geom_path>`,
-:py:mod:`curve <lets_plot.geom_curve>`,
 :py:mod:`tiles <lets_plot.geom_tile>`,
 :py:mod:`polygon <lets_plot.geom_polygon>`,
 :py:mod:`map <lets_plot.geom_map>`,
@@ -88,6 +87,7 @@ Combine Layers on Map ``ggplot2`` Style
 :py:mod:`vertical line <lets_plot.geom_vline>`,
 :py:mod:`rectangle <lets_plot.geom_rect>`,
 :py:mod:`segment <lets_plot.geom_segment>`,
+:py:mod:`curve <lets_plot.geom_curve>`,
 :py:mod:`text <lets_plot.geom_text>`,
 :py:mod:`label <lets_plot.geom_label>`.
 
