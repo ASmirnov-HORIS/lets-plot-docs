@@ -121,7 +121,9 @@ Examples:
 :py:mod:`bar <lets_plot.geom_bar>`,
 :py:mod:`pie <lets_plot.geom_pie>`,
 :py:mod:`lollipop <lets_plot.geom_lollipop>`,
-:py:mod:`boxplot <lets_plot.geom_boxplot>`
+:py:mod:`boxplot <lets_plot.geom_boxplot>`,
+:py:mod:`count <lets_plot.geom_count>`,
+:py:mod:`stat_sum <lets_plot.stat_sum>`
 
 Examples:
 
