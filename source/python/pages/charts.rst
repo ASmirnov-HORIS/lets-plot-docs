@@ -543,7 +543,8 @@ Examples:
 :py:mod:`ylab() <lets_plot.ylab>`,
 :py:mod:`labs() <lets_plot.labs>`,
 :py:mod:`guide_legend() <lets_plot.guide_legend>`,
-:py:mod:`guide_colorbar() <lets_plot.guide_colorbar>`
+:py:mod:`guide_colorbar() <lets_plot.guide_colorbar>`,
+:py:mod:`guides() <lets_plot.guides>`
 
 Predefined themes:
 
