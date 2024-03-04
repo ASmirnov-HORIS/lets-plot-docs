@@ -449,6 +449,7 @@ Examples:
 
 :py:mod:`coord_cartesian() <lets_plot.coord_cartesian>`,
 :py:mod:`coord_fixed() <lets_plot.coord_fixed>`,
+:py:mod:`coord_polar() <lets_plot.coord_polar>`,
 :py:mod:`coord_flip() <lets_plot.coord_flip>`,
 :py:mod:`coord_map() <lets_plot.coord_map>`
 

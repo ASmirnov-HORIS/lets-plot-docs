@@ -362,6 +362,7 @@ Coordinate Systems
 
     coord_cartesian
     coord_fixed
+    coord_polar
     coord_map
     coord_flip
 
